@@ -1,0 +1,46 @@
+2022-10-13 13:05:32.227  INFO 3724 --- [main] c.v.s.ProductrestapirevisionApplication  : Starting ProductrestapirevisionApplication using Java 11.0.11 on LAPTOP-JIVHSHJ5 with PID 3724 (C:\Users\HP\eclipse-workspace\productrestapirevision\target\classes started by HP in C:\Users\HP\eclipse-workspace\productrestapirevision)
+2022-10-13 13:05:32.246  INFO 3724 --- [main] c.v.s.ProductrestapirevisionApplication  : No active profile set, falling back to default profiles: default
+2022-10-13 13:05:35.724  INFO 3724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-13 13:05:35.934  INFO 3724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 171 ms. Found 1 JPA repository interfaces.
+2022-10-13 13:05:37.808  INFO 3724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-10-13 13:05:37.886  INFO 3724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-10-13 13:05:37.887  INFO 3724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-10-13 13:05:38.278  INFO 3724 --- [main] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring embedded WebApplicationContext
+2022-10-13 13:05:38.279  INFO 3724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5833 ms
+2022-10-13 13:05:38.994  WARN 3724 --- [main] c.h.i.impl.HazelcastInstanceFactory      : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.nio=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+2022-10-13 13:05:39.536  INFO 3724 --- [main] com.hazelcast.system                     : [127.0.0.1]:5701 [dev] [4.2.4] Hazelcast 4.2.4 (20211220 - 25f0049) starting at [127.0.0.1]:5701
+2022-10-13 13:05:40.848  INFO 3724 --- [main] c.h.s.d.integration.DiscoveryService     : [127.0.0.1]:5701 [dev] [4.2.4] No discovery strategy is applicable for auto-detection
+2022-10-13 13:05:41.482  INFO 3724 --- [main] com.hazelcast.instance.impl.Node         : [127.0.0.1]:5701 [dev] [4.2.4] Using Multicast discovery
+2022-10-13 13:05:41.497  WARN 3724 --- [main] com.hazelcast.cp.CPSubsystem             : [127.0.0.1]:5701 [dev] [4.2.4] CP Subsystem is not enabled. CP data structures will operate in UNSAFE mode! Please note that UNSAFE mode will not provide strong consistency guarantees.
+2022-10-13 13:05:42.450  INFO 3724 --- [main] c.h.internal.diagnostics.Diagnostics     : [127.0.0.1]:5701 [dev] [4.2.4] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+2022-10-13 13:05:42.458  INFO 3724 --- [main] com.hazelcast.core.LifecycleService      : [127.0.0.1]:5701 [dev] [4.2.4] [127.0.0.1]:5701 is STARTING
+2022-10-13 13:05:44.549  INFO 3724 --- [main] c.h.internal.cluster.ClusterService      : [127.0.0.1]:5701 [dev] [4.2.4] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 601f897f-4ae7-45b8-bbf6-c2e0969c2f80 this
+]
+
+2022-10-13 13:05:44.579  INFO 3724 --- [main] com.hazelcast.core.LifecycleService      : [127.0.0.1]:5701 [dev] [4.2.4] [127.0.0.1]:5701 is STARTED
+2022-10-13 13:05:45.095  INFO 3724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-10-13 13:05:45.736  INFO 3724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-10-13 13:05:45.827  INFO 3724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-13 13:05:46.037  INFO 3724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.3.Final
+2022-10-13 13:05:46.662  INFO 3724 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-13 13:05:47.042  INFO 3724 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-13 13:05:48.513  INFO 3724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-13 13:05:48.528  INFO 3724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 13:05:49.347  WARN 3724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-13 13:05:51.746  INFO 3724 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-10-13 13:05:51.796  INFO 3724 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37ec9c49, org.springframework.security.web.context.SecurityContextPersistenceFilter@4001a5a1, org.springframework.security.web.header.HeaderWriterFilter@7db57566, org.springframework.web.filter.CorsFilter@3ab2d64c, org.springframework.security.web.csrf.CsrfFilter@f55ecec, org.springframework.security.web.authentication.logout.LogoutFilter@74940388, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3d3709d0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@e9e25b5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3f6f26cb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1fa35f7e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fae8455, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16dc12cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40123014, org.springframework.security.web.session.SessionManagementFilter@5cb4e255, org.springframework.security.web.access.ExceptionTranslationFilter@6272936b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5fb4870b]
+2022-10-13 13:05:52.039  INFO 3724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/productapi'
+2022-10-13 13:05:52.064  INFO 3724 --- [main] c.v.s.ProductrestapirevisionApplication  : Started ProductrestapirevisionApplication in 21.091 seconds (JVM running for 23.572)
+2022-10-13 13:05:52.842  INFO 3724 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[.[localhost].[/productapi]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-13 13:05:52.843  INFO 3724 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-10-13 13:05:52.848  INFO 3724 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-10-13 13:07:24.576  WARN 3724 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [212] milliseconds.
+2022-10-13 13:08:13.679  INFO 3724 --- [http-nio-8080-exec-3] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 593 ms
+2022-10-13 13:09:20.520  INFO 3724 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-10-13 13:09:20.823  INFO 3724 --- [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 13:09:20.832  INFO 3724 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-10-13 13:09:20.866  INFO 3724 --- [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
